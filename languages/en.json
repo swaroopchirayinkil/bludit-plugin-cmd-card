@@ -1,0 +1,6 @@
+{
+    "plugin-data": {
+        "name": "Linux Command Popup",
+        "description": "Shows a popup with random Linux commands, descriptions, categories, skill levels, and man page links"
+    }
+}

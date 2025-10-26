@@ -1,0 +1,141 @@
+.linux-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 350px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.linux-popup.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.linux-popup.hide {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.popup-content {
+    color: white;
+}
+
+.cmd-title {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+.cmd-name {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.cmd-name code {
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cmd-description {
+    font-size: 15px;
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+.cmd-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 6px;
+    margin: 12px 0;
+}
+
+.detail-item {
+    margin: 8px 0;
+    font-size: 13px;
+}
+
+.detail-label {
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.detail-value {
+    margin-left: 8px;
+}
+
+.skill-beginner {
+    color: #a8e6cf;
+}
+
+.skill-intermediate {
+    color: #ffd3b6;
+}
+
+.skill-advanced {
+    color: #ffaaa5;
+}
+
+.man-link {
+    display: inline-block;
+    background: white;
+    color: #667eea;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.man-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+    .linux-popup {
+        width: calc(100% - 40px);
+        left: 20px;
+        bottom: 20px;
+    }
+}
