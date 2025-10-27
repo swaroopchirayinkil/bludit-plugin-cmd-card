@@ -1,0 +1,29 @@
+[
+  {
+    "name": "kubectl get",
+    "category": "Kubernetes",
+    "description": "Display one or many resources in a Kubernetes cluster",
+    "example": "kubectl get pods -o wide",
+    "useCase": "Listing all pods with additional details like node name and IP addresses",
+    "author": "Google (Kubernetes Project)",
+    "manPageUrl": "https://kubernetes.io/docs/reference/kubectl/quick-reference/"
+  },
+  {
+    "name": "kubectl describe",
+    "category": "Kubernetes",
+    "description": "Show detailed information about a specific resource",
+    "example": "kubectl describe pod nginx-pod",
+    "useCase": "Debugging pods by viewing events, status, and configuration details",
+    "author": "Google (Kubernetes Project)",
+    "manPageUrl": "https://kubernetes.io/docs/reference/kubectl/quick-reference/"
+  },
+  {
+    "name": "kubectl apply",
+    "category": "Kubernetes",
+    "description": "Apply a configuration to a resource by filename or stdin",
+    "example": "kubectl apply -f deployment.yaml",
+    "useCase": "Deploying or updating applications using declarative YAML manifests",
+    "author": "Google (Kubernetes Project)",
+    "manPageUrl": "https://kubernetes.io/docs/reference/kubectl/quick-reference/"
+  }
+]

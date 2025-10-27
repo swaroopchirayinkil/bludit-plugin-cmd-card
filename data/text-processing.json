@@ -1,0 +1,29 @@
+[
+  {
+    "name": "grep",
+    "category": "Text Processing",
+    "description": "Search for patterns in files using regular expressions",
+    "example": "grep -r 'error' /var/log/",
+    "useCase": "Finding specific text patterns in log files for debugging and system monitoring",
+    "author": "Ken Thompson",
+    "manPageUrl": "https://man7.org/linux/man-pages/man1/grep.1.html"
+  },
+  {
+    "name": "awk",
+    "category": "Text Processing",
+    "description": "Pattern scanning and processing language for data extraction",
+    "example": "awk '{print $1, $3}' file.txt",
+    "useCase": "Extracting specific columns from structured text files like CSV or log files",
+    "author": "Alfred Aho, Peter Weinberger, Brian Kernighan",
+    "manPageUrl": "https://man7.org/linux/man-pages/man1/awk.1p.html"
+  },
+  {
+    "name": "sed",
+    "category": "Text Processing",
+    "description": "Stream editor for filtering and transforming text",
+    "example": "sed 's/old/new/g' file.txt",
+    "useCase": "Bulk find-and-replace operations in text files without opening an editor",
+    "author": "Lee E. McMahon",
+    "manPageUrl": "https://man7.org/linux/man-pages/man1/sed.1.html"
+  }
+]
