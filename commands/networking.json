@@ -1,0 +1,71 @@
+{
+    "category": "Networking",
+    "commands": [
+        {
+            "command": "ping",
+            "category": "Networking",
+            "description": "Send ICMP ECHO_REQUEST packets to network hosts to test connectivity.",
+            "example": "ping -c 4 google.com",
+            "usecase": "Test network connectivity by sending 4 packets to a host",
+            "author": "Mike Muuss",
+            "developer": "Various contributors",
+            "year": "1983",
+            "manpage": "https://man7.org/linux/man-pages/man8/ping.8.html"
+        },
+        {
+            "command": "netstat",
+            "category": "Networking",
+            "description": "Print network connections, routing tables, and interface statistics.",
+            "example": "netstat -tulpn",
+            "usecase": "Show all listening TCP/UDP ports with process IDs",
+            "author": "Fred N. van Kempen",
+            "developer": "net-tools project",
+            "year": "1983",
+            "manpage": "https://man7.org/linux/man-pages/man8/netstat.8.html"
+        },
+        {
+            "command": "curl",
+            "category": "Networking",
+            "description": "Transfer data from or to a server using various protocols.",
+            "example": "curl -O https://example.com/file.zip",
+            "usecase": "Download a file from a URL and save it locally",
+            "author": "Daniel Stenberg",
+            "developer": "curl project",
+            "year": "1997",
+            "manpage": "https://curl.se/docs/manpage.html"
+        },
+        {
+            "command": "ssh",
+            "category": "Networking",
+            "description": "OpenSSH remote login client for secure remote access.",
+            "example": "ssh user@remote-host.com -p 2222",
+            "usecase": "Connect to a remote server on custom port 2222",
+            "author": "Tatu Ylönen",
+            "developer": "OpenSSH team",
+            "year": "1995",
+            "manpage": "https://man7.org/linux/man-pages/man1/ssh.1.html"
+        },
+        {
+            "command": "wget",
+            "category": "Networking",
+            "description": "Non-interactive network downloader for retrieving files.",
+            "example": "wget -r -np https://example.com/files/",
+            "usecase": "Recursively download files from a directory listing",
+            "author": "Hrvoje Nikšić",
+            "developer": "GNU Project",
+            "year": "1996",
+            "manpage": "https://man7.org/linux/man-pages/man1/wget.1.html"
+        },
+        {
+            "command": "ifconfig",
+            "category": "Networking",
+            "description": "Configure network interface parameters.",
+            "example": "ifconfig eth0",
+            "usecase": "Display configuration details of a specific network interface",
+            "author": "Fred N. van Kempen",
+            "developer": "net-tools project",
+            "year": "1983",
+            "manpage": "https://man7.org/linux/man-pages/man8/ifconfig.8.html"
+        }
+    ]
+}

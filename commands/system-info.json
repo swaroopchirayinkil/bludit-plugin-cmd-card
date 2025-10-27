@@ -1,0 +1,71 @@
+{
+    "category": "System Information",
+    "commands": [
+        {
+            "command": "top",
+            "category": "System Information",
+            "description": "Display dynamic real-time view of running system processes.",
+            "example": "top -u username",
+            "usecase": "Monitor CPU and memory usage for a specific user's processes",
+            "author": "William LeFebvre",
+            "developer": "Various contributors",
+            "year": "1984",
+            "manpage": "https://man7.org/linux/man-pages/man1/top.1.html"
+        },
+        {
+            "command": "df",
+            "category": "System Information",
+            "description": "Report file system disk space usage.",
+            "example": "df -h",
+            "usecase": "Check available disk space in human-readable format",
+            "author": "Torbjörn Granlund, David MacKenzie",
+            "developer": "GNU Project",
+            "year": "1985",
+            "manpage": "https://man7.org/linux/man-pages/man1/df.1.html"
+        },
+        {
+            "command": "free",
+            "category": "System Information",
+            "description": "Display amount of free and used memory in the system.",
+            "example": "free -h",
+            "usecase": "View RAM and swap usage in human-readable format",
+            "author": "Brian Edmonds",
+            "developer": "procps-ng project",
+            "year": "1992",
+            "manpage": "https://man7.org/linux/man-pages/man1/free.1.html"
+        },
+        {
+            "command": "uname",
+            "category": "System Information",
+            "description": "Print system information including kernel version and architecture.",
+            "example": "uname -a",
+            "usecase": "Display all available system information",
+            "author": "David MacKenzie",
+            "developer": "GNU Project",
+            "year": "1987",
+            "manpage": "https://man7.org/linux/man-pages/man1/uname.1.html"
+        },
+        {
+            "command": "uptime",
+            "category": "System Information",
+            "description": "Show how long the system has been running and load averages.",
+            "example": "uptime",
+            "usecase": "Check system uptime and current load",
+            "author": "Larry Greenfield, Michael Haardt",
+            "developer": "procps-ng project",
+            "year": "1993",
+            "manpage": "https://man7.org/linux/man-pages/man1/uptime.1.html"
+        },
+        {
+            "command": "du",
+            "category": "System Information",
+            "description": "Estimate file and directory space usage.",
+            "example": "du -sh /var/log/*",
+            "usecase": "Check size of all log directories in human-readable format",
+            "author": "Torbjörn Granlund, David MacKenzie",
+            "developer": "GNU Project",
+            "year": "1987",
+            "manpage": "https://man7.org/linux/man-pages/man1/du.1.html"
+        }
+    ]
+}

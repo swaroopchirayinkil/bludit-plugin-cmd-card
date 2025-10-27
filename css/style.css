@@ -1,0 +1,143 @@
+#linux-cmd-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 350px;
+    max-width: calc(100vw - 40px);
+    background: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0 #000000;
+    font-family: 'Courier New', monospace;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+#linux-cmd-popup.linux-cmd-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.linux-cmd-header {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linux-cmd-title {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.linux-cmd-close {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linux-cmd-close:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.linux-cmd-content {
+    padding: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.linux-cmd-command {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+    font-family: 'Courier New', monospace;
+}
+
+.linux-cmd-category {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 4px 10px;
+    font-size: 11px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.linux-cmd-description {
+    font-size: 13px;
+    color: #333333;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.linux-cmd-example-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.linux-cmd-example {
+    background: #f5f5f5;
+    border: 1px solid #000000;
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.linux-cmd-usecase {
+    font-size: 12px;
+    color: #555555;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.linux-cmd-meta {
+    font-size: 11px;
+    color: #666666;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #dddddd;
+}
+
+.linux-cmd-manpage {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #000000;
+    transition: all 0.2s;
+}
+
+.linux-cmd-manpage:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    #linux-cmd-popup {
+        bottom: 10px;
+        left: 10px;
+        width: calc(100vw - 20px);
+    }
+}

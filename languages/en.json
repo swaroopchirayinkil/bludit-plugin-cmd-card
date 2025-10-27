@@ -1,6 +1,9 @@
 {
-  "plugin-data": {
-    "name": "Linux Commands Popup",
-    "description": "Shows random Linux commands with examples, categories, use cases, and man page links in a clean popup"
-  }
+    "plugin-data": {
+        "name": "Linux Command Showcase",
+        "description": "Display random Linux commands with examples in a non-intrusive popup"
+    },
+    "show-popup-on-page-load": "Show popup on page load",
+    "auto-hide-delay-seconds-0-never": "Auto-hide delay (seconds, 0 = never)",
+    "active-categories-comma-separated": "Active categories (comma-separated)"
 }

@@ -1,0 +1,82 @@
+{
+    "category": "File Management",
+    "commands": [
+        {
+            "command": "ls",
+            "category": "File Management",
+            "description": "List directory contents with detailed information about files and directories.",
+            "example": "ls -lah /home/user",
+            "usecase": "View all files including hidden ones with human-readable sizes",
+            "author": "Richard Stallman",
+            "developer": "GNU Project",
+            "year": "1985",
+            "manpage": "https://man7.org/linux/man-pages/man1/ls.1.html"
+        },
+        {
+            "command": "cp",
+            "category": "File Management",
+            "description": "Copy files and directories from one location to another.",
+            "example": "cp -r /source/dir /destination/dir",
+            "usecase": "Recursively copy entire directory structures with all contents",
+            "author": "Torbjörn Granlund, David MacKenzie",
+            "developer": "GNU Project",
+            "year": "1987",
+            "manpage": "https://man7.org/linux/man-pages/man1/cp.1.html"
+        },
+        {
+            "command": "mv",
+            "category": "File Management",
+            "description": "Move or rename files and directories.",
+            "example": "mv oldname.txt newname.txt",
+            "usecase": "Rename files or move them to different directories",
+            "author": "Mike Parker, David MacKenzie",
+            "developer": "GNU Project",
+            "year": "1987",
+            "manpage": "https://man7.org/linux/man-pages/man1/mv.1.html"
+        },
+        {
+            "command": "rm",
+            "category": "File Management",
+            "description": "Remove files or directories from the filesystem.",
+            "example": "rm -rf /tmp/old_files",
+            "usecase": "Forcefully remove directories and all their contents",
+            "author": "Paul Rubin, David MacKenzie",
+            "developer": "GNU Project",
+            "year": "1987",
+            "manpage": "https://man7.org/linux/man-pages/man1/rm.1.html"
+        },
+        {
+            "command": "find",
+            "category": "File Management",
+            "description": "Search for files in a directory hierarchy based on various criteria.",
+            "example": "find /home -name '*.log' -mtime +30",
+            "usecase": "Find all log files older than 30 days in home directory",
+            "author": "Eric B. Decker, James Youngman",
+            "developer": "GNU Project",
+            "year": "1987",
+            "manpage": "https://man7.org/linux/man-pages/man1/find.1.html"
+        },
+        {
+            "command": "mkdir",
+            "category": "File Management",
+            "description": "Create new directories with specified permissions.",
+            "example": "mkdir -p /path/to/nested/directory",
+            "usecase": "Create nested directory structure in one command",
+            "author": "David MacKenzie",
+            "developer": "GNU Project",
+            "year": "1987",
+            "manpage": "https://man7.org/linux/man-pages/man1/mkdir.1.html"
+        },
+        {
+            "command": "touch",
+            "category": "File Management",
+            "description": "Create empty files or update file timestamps.",
+            "example": "touch newfile.txt",
+            "usecase": "Create a new empty file or update modification time",
+            "author": "Paul Rubin, Arnold Robbins",
+            "developer": "GNU Project",
+            "year": "1987",
+            "manpage": "https://man7.org/linux/man-pages/man1/touch.1.html"
+        }
+    ]
+}

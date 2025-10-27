@@ -1,0 +1,71 @@
+{
+    "category": "Process Management",
+    "commands": [
+        {
+            "command": "ps",
+            "category": "Process Management",
+            "description": "Report a snapshot of current processes running on the system.",
+            "example": "ps aux | grep nginx",
+            "usecase": "Find all running nginx processes with detailed information",
+            "author": "Michael K. Johnson",
+            "developer": "procps-ng project",
+            "year": "1991",
+            "manpage": "https://man7.org/linux/man-pages/man1/ps.1.html"
+        },
+        {
+            "command": "kill",
+            "category": "Process Management",
+            "description": "Send signals to processes, typically to terminate them.",
+            "example": "kill -9 12345",
+            "usecase": "Forcefully terminate a process with PID 12345",
+            "author": "Salvatore Valente",
+            "developer": "util-linux project",
+            "year": "1971",
+            "manpage": "https://man7.org/linux/man-pages/man1/kill.1.html"
+        },
+        {
+            "command": "systemctl",
+            "category": "Process Management",
+            "description": "Control the systemd system and service manager.",
+            "example": "systemctl restart apache2",
+            "usecase": "Restart the Apache web server service",
+            "author": "Lennart Poettering, Kay Sievers",
+            "developer": "systemd project",
+            "year": "2010",
+            "manpage": "https://man7.org/linux/man-pages/man1/systemctl.1.html"
+        },
+        {
+            "command": "htop",
+            "category": "Process Management",
+            "description": "Interactive process viewer with color-coded display.",
+            "example": "htop",
+            "usecase": "Monitor system resources with an improved interface",
+            "author": "Hisham Muhammad",
+            "developer": "htop project",
+            "year": "2004",
+            "manpage": "https://man7.org/linux/man-pages/man1/htop.1.html"
+        },
+        {
+            "command": "pkill",
+            "category": "Process Management",
+            "description": "Send signals to processes based on name and other attributes.",
+            "example": "pkill -f python",
+            "usecase": "Kill all processes with 'python' in their command line",
+            "author": "Kjetil Torgrim Homme",
+            "developer": "procps-ng project",
+            "year": "2000",
+            "manpage": "https://man7.org/linux/man-pages/man1/pkill.1.html"
+        },
+        {
+            "command": "nice",
+            "category": "Process Management",
+            "description": "Run a command with modified scheduling priority.",
+            "example": "nice -n 10 ./script.sh",
+            "usecase": "Run a script with lower priority to reduce system impact",
+            "author": "David MacKenzie",
+            "developer": "GNU Project",
+            "year": "1987",
+            "manpage": "https://man7.org/linux/man-pages/man1/nice.1.html"
+        }
+    ]
+}
